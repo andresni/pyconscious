@@ -1,0 +1,8 @@
+# Version 0.1
+- Basic setup
+- Basic framework
+- Added quality tests: centrality
+- Added measures: LZc, ACE, SCE
+- See Schartner et al 2015: [citation here]
+
+# Version 0.2
