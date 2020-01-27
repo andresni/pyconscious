@@ -1,7 +1,16 @@
+# Issues
+- LZc max too strict
+- SCE max too strict
+
+# TODO
+- Generalize normalization functions
+- Make code more efficient
+- Add more measures
+
 # Version 0.1
 - Basic setup
 - Basic framework
-- Added quality tests: centrality
+- Added quality tests: centrality, normality
 - Added measures: LZc, ACE, SCE
 - See Schartner et al 2015: [citation here]
 
