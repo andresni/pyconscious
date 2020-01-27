@@ -4,4 +4,4 @@
 from pyconscious.pyconscious import ACE, LZc, SCE
 
 # Importing data distribution measures
-from pyconscious.pyconscious import centrality
+from pyconscious.pyconscious import stationarity, normality

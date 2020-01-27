@@ -2,6 +2,7 @@
 
 import numpy as np
 import scipy as sp
+import sys
 
 # Used by LZc
 def compress(string):
@@ -65,24 +66,25 @@ def binarize(data, threshold):
   TH[i] = eval("np.{}(M[i, :])".format(threshold))
   M[i, :] = [1 if l > TH[i] else 0 for l in M[i, :]]
  M = M.astype(int)
- print(np.sum(M),np.shape(M))
  return M
 
 
-def concatenate(data, dimension):
+def concatenate(data, concat):
  """
  Takes a 2D array and concatenates it into a string along dimension.
  """
  ro, co = np.shape(data)
  s = ''
- if dimension == "time":
+ if concat == "time":
    for j in range(ro):
      for i in range(co):
          s += str(data[j, i])
- elif dimension == "space":
+ elif concat == "space":
    for j in range(co):
      for i in range(ro):
       s += str(data[i, j])
+ else:
+   sys.exit("{} is not a valid argument for 'concat'".format(concat))
  return s
 
 
