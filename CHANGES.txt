@@ -1,11 +1,12 @@
 # Issues
-- LZc max too strict
-- SCE max too strict
+- LZc(norm="max") too strict
+- SCE(norm="max") too strict
 
 # TODO
 - Generalize normalization functions
 - Make code more efficient
 - Add more measures
+- Better documentation
 
 # Version 0.1
 - Basic setup

@@ -48,7 +48,6 @@ def normality(data, test = "sw", ea = "mean", ca = "mean"):
   Valid tests to use are:
       'sw'  - Shapiro Wilks test
       'k2'  - D`Agostino`s K^2 test
-      'adt' - Anderson-Darling test
   """
   data = aux.data_check(data)
   return mqual.normality(data, test, ea, ca)

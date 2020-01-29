@@ -97,16 +97,16 @@ def Psi(data, t):
    X = np.angle(sp.signal.hilbert(X))
    ro, co = np.shape(X)
    M = np.zeros((ro, ro - 1, co))
-  
+
    for i in range(ro):
       l = 0
       for j in range(ro):
          if i != j:
             M[i, l] = diff2(X[i], X[j], t)
             l += 1
-  
+
    ce = np.zeros(ro)
-  
+
    for i in range(ro):
       c = map2(M[i])
       ce[i] = entropy(c)
@@ -125,6 +125,5 @@ def diff2(p1, p2, t):
      d[i] = 2 * np.pi - d[i]
     if d[i] < t:
      d2[i] = 1
-  
+
    return d2
-  

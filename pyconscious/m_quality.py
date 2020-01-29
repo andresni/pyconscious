@@ -3,8 +3,6 @@
 from . import functions as func
 import numpy as np
 import sys
-from . import m_diversity as mdiv
-from . import m_quality as mqual
 import statsmodels as stm
 import statsmodels.tsa.stattools as sts
 import scipy.stats as ss
@@ -43,8 +41,6 @@ def normality(data, test, ea, ca):
             t.append(1 - ss.shapiro(c)[1])
         elif test == "k2":
             t.append(1 - ss.normaltest(c)[1])
-        elif test == "adt":
-            t.append(1 - ss.anderson(c)[1])
         else:
             sys.exit("'{}' is an invalid parameter for 'test'. Exiting.".format(test))
     try:
