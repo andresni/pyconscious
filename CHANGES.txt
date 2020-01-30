@@ -16,3 +16,5 @@
 - See Schartner et al 2015: [citation here]
 
 # Version 0.2
+- Fixed a float check error
+- Added dependencies to install

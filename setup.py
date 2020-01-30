@@ -15,6 +15,11 @@ setuptools.setup(
      long_description_content_type="text/markdown",
      url="https://github.com/andresni/pyconscious",
      packages=['pyconscious'],
+     install_requires = [
+         "numpy",
+         "scipy",
+         "statsmodels",
+     ],         
      classifiers=[
          "Programming Language :: Python :: 3",
          "License :: OSI Approved :: MIT License",
